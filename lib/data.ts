@@ -38,7 +38,7 @@ export const projectsData = [
     title: "Miniletics Sales",
     description:
       "Analyze Miniletics' customer behavior across two online marketplaces.",
-    tags: ["Python", "Jupyter Notebook", "Excels", "Power BI"],
+    tags: ["Python", "Jupyter Notebook", "Excel", "PowerBI"],
     imageUrl: minileticsImg,
   },
   {
@@ -59,7 +59,7 @@ export const projectsData = [
     title: "ATM Loan Analysis",
     description:
       "Evaluated client data for PT. Mitramas Infosys Global to clients by their city and location.",
-    tags: ["Python", "Jupyter Notebook", "Excels", "Power BI"],
+    tags: ["Python", "Jupyter Notebook", "Excel", "PowerBI"],
     imageUrl: atmloanImg,
   },
 ] as const;
@@ -72,7 +72,7 @@ export const skillsData = [
   "Clickhouse",
   "Docker",
   "Linux",
-  "GitLab",
+  "Git",
   "Airbyte",
   "Airflow",
   "dbt",
@@ -81,7 +81,9 @@ export const skillsData = [
   "Jupyter Notebook",
   "Pandas",
   "Seaborn",
+  "Matplotlib",
   "Google Cloud Platform",
+  "Google Docs"
 ] as const;
 
 export const experiencesData = [
