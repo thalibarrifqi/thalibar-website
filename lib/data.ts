@@ -45,7 +45,7 @@ export const projectsData = [
     title: "Sentiment Analysis",
     description:
       "Analysis of public sentiment on 10,000 tweets about the 'UCL Final' between Liverpool and Real Madrid.",
-    tags: ["Python", "Jupyter Notebook", "Seaborn", "Numpy", "Pandas"],
+    tags: ["Python", "roBERTa-base", "Jupyter Notebook", "Seaborn", "Numpy", "Pandas"],
     imageUrl: twitterImg,
   },
   {
