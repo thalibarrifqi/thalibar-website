@@ -45,8 +45,8 @@ export default function Contact() {
             }
             toast.success("Email sent successfully!");
           }}>
-            <input type="email" required maxLength={500} className="h-14 px-4 rounded-lg borderBlack" placeholder="Your email" name="senderEmail" />
-            <textarea required maxLength={500} className="h-52 my-3 rounded-lg borderBlack p-4" placeholder="Your message" name="message"/>
+            <input type="email" required maxLength={500} className="h-14 px-4 rounded-lg borderBlack dark:text-gray-800" placeholder="Your email" name="senderEmail" />
+            <textarea required maxLength={500} className="h-52 my-3 rounded-lg borderBlack p-4 dark:text-gray-800" placeholder="Your message" name="message"/>
             <SubumitBtn />
         </form>
     </motion.section>
