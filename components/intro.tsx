@@ -44,7 +44,7 @@ export default function Intro() {
                     delay:0.15,
                     duration:0.8
                  }}
-                    className='absolute bottom-0 right-0 text-3xl '>👋</motion.span>
+                    className='absolute bottom-0 right-0 text-3xl '>👋🏻</motion.span>
             </div>
         </div>
         <motion.h1
