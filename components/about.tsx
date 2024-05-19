@@ -20,13 +20,11 @@ export default function About () {
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
         After graduating with a degree in{" "}
-        <span className="font-bold">Computer Engineering</span>, I decided to pursue my passion for data. I enrolled in a coding bootcamp and learned data engineering. I thrive on
-        <span className="italic font-bold"> solving complex data challenges and continually seek innovative ways to optimize data processes.</span> Collaboration is essential to my work, I enjoy partnering with others to transform data into actionable insights. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack includes{" "}
+        <span className="font-bold">Computer Engineering</span>, I decided to pursue my passion for data. I enrolled in a coding bootcamp and learned data engineering. I'm driven by
+        <span className="italic font-bold"> the thrill of tackling intricate data puzzles, constantly exploring inventive strategies to streamline data workflows.</span> I firmly believe in the power of teamwork, relishing the opportunity to join forces with colleagues in crafting meaningful narratives from raw data. There's nothing quite like the euphoria of cracking a tough problem and witnessing the pieces fall into place. My core stack includes{" "}
         <span className="font-bold">Postgres, MySQL, Clickhouse, Airbyte, dbt, Airflow.</span>
         <span> I am also familiar with</span>
         <span className="font-bold"> Metabase and Power BI.</span>
-        <span> Outside of work, I enjoy reading and listening to music.</span>
       </p>
       <p>
         I'm open to{" "}
