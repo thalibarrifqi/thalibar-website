@@ -37,28 +37,28 @@ export const projectsData = [
   {
     title: "Miniletics Sales",
     description:
-      "Examine the customer behavior of Miniletics from two online marketplaces.",
+      "Analyze Miniletics' customer behavior across two online marketplaces.",
     tags: ["Python", "Jupyter Notebook", "Excels", "Power BI"],
     imageUrl: minileticsImg,
   },
   {
     title: "Sentiment Analysis",
     description:
-      "Sentiment analysis on 10,000 tweets about the 'UCL Final' between Liverpool and Real Madrid.",
+      "Analysis of public sentiment on 10,000 tweets about the 'UCL Final' between Liverpool and Real Madrid.",
     tags: ["Python", "Jupyter Notebook", "Seaborn", "Numpy", "Pandas"],
     imageUrl: twitterImg,
   },
   {
     title: "Care APP",
     description:
-      "Web and Android application specifically designed for reporting and monitoring machine problems in PT. Jatim Autocomp Indonesia.",
+      "Web application developed for reporting and monitoring machine issues at PT. Jatim Autocomp Indonesia.",
     tags: ["MySQL", "PHP", "JavaScript", "BootStrap", "HTML"],
     imageUrl: careappImg,
   },
   {
     title: "ATM Loan Analysis",
     description:
-      "Analyzed client data for PT. Mitramas Infosys Global to calculate metrics and map clients by city and location.",
+      "Evaluated client data for PT. Mitramas Infosys Global to clients by their city and location.",
     tags: ["Python", "Jupyter Notebook", "Excels", "Power BI"],
     imageUrl: atmloanImg,
   },
@@ -89,7 +89,7 @@ export const experiencesData = [
     title: "Software Engineer",
     location: "Pasuruan, East Java",
     description:
-    "I interned as a Software Engineer at wiring harness manufacturer in Indonesia, change the problem reporting and monitoring system from paper-based to web and Android applications.",
+    "I interned as a Software Engineer at a wiring harness manufacturer in Indonesia, transforming the problem reporting and monitoring system from paper-based to web applications.",
     icon: React.createElement(LuGraduationCap),
     date: "2020",
   },
@@ -97,7 +97,7 @@ export const experiencesData = [
     title: "Data Entry",
     location: "Remote",
     description:
-    "I start my journey in data by working part-time as a Data Entry Specialist. By doing this I learned the importance of data in aligning with and supporting the company's vision.",
+    "I began my journey in data by working part-time as a Data Entry Specialist. This job taught me how important data is for helping a company achieve its goals.",
     icon: React.createElement(CgWorkAlt),
     date: "2021-2022",
   },

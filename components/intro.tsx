@@ -55,7 +55,7 @@ export default function Intro() {
             <span className="font-bold">Hello, I'm Thalibar Rifqi.</span> I'm a {" "}
             <span className="font-bold">data engineer</span> 
             <span> with </span>
-            <span className="font-bold">1 year</span> of experience. I have a passion for data, including{" "}
+            <span className="font-bold">1 year</span> of experience. I'm passionate about data, from{" "}
             <span className='underline font-bold'>collecting, processing,</span>
             <span> </span>
             <span className='underline font-bold'>analyzing,</span>
