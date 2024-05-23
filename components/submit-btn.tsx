@@ -1,6 +1,7 @@
 import React from "react";
 import { FaPaperPlane } from "react-icons/fa";
 import { useFormStatus } from "react-dom";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 export default function SubmitBtn() {
   const { pending } = useFormStatus();
@@ -16,7 +17,7 @@ export default function SubmitBtn() {
       ) : (
         <>
           Submit{" "}
-          <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />{" "}
+          <FaPaperPlane onClick={() => sendGTMEvent({ event: 'buttonClicked', value: 'Email sent' })} className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />{" "}
         </>
       )}
     </button>

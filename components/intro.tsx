@@ -9,6 +9,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from '@/lib/hooks';
 import { useActiveSectionContext } from '@/context/active-section-context';
+import { sendGTMEvent } from '@next/third-parties/google';
 
 export default function Intro() {
   const { ref } = useSectionInView('Home', 0.5)
@@ -90,7 +91,7 @@ export default function Intro() {
           download
         >
           Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          <HiDownload onClick={() => sendGTMEvent({ event: 'buttonClicked', value: 'CV downloaded' })} className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
         <a
