@@ -80,10 +80,10 @@ export const skillsData = [
   "Metabase",
   "Jupyter Notebook",
   "Pandas",
-  "Seaborn",
   "Matplotlib",
-  "Google Cloud Platform",
-  "Google Docs"
+  "Google BigQuery",
+  "Cloud Data Fusion",
+  "Cloud Composer",
 ] as const;
 
 export const experiencesData = [
