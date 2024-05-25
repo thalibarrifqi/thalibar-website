@@ -11,7 +11,7 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Thalibar | Personal Portofolio',
+  title: 'Thalibar | Personal Portfolio',
   description: 'Thalibar is data engineer with 1 year of experience.',
 }
 
