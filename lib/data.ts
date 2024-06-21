@@ -88,12 +88,20 @@ export const skillsData = [
 
 export const experiencesData = [
   {
-    title: "Software Engineer",
-    location: "Pasuruan, East Java",
+    title: "Freelancer",
+    location: "Remote",
     description:
-    "I interned as a Software Engineer at a wiring harness manufacturer in Indonesia, transforming the problem reporting and monitoring system from paper-based to web applications.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2020",
+      "Doing part-time work on Upwork is one of my ways to upgrade my skills and connect with amazing stakeholders around the world.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2024 - present",
+  },
+  {
+    title: "Data Engineer",
+    location: "Gresik, East Java",
+    description:
+    "I have been working as a Data Engineer for over a year at one of the largest textile manufacturers in Indonesia, helping the company achieve their vision by collaborate with another department.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023 - present",
   },
   {
     title: "Data Entry",
@@ -104,19 +112,11 @@ export const experiencesData = [
     date: "2021-2022",
   },
   {
-    title: "Data Engineer",
-    location: "Gresik, East Java",
+    title: "Software Engineer",
+    location: "Pasuruan, East Java",
     description:
-      "I have been working as a Data Engineer for over a year at one of the largest textile manufacturers in Indonesia, helping the company achieve their vision by collaborate with another department.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2023 - present",
-  },
-  {
-    title: "Freelancer",
-    location: "Remote",
-    description:
-      "Doing part-time work on Upwork is one of my ways to upgrade my skills and connect with amazing stakeholders around the world.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2024 - present",
+    "I interned as a Software Engineer at a wiring harness manufacturer in Indonesia, transforming the problem reporting and monitoring system from paper-based to web applications.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2020",
   },
 ] as const;
