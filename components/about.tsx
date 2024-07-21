@@ -22,7 +22,7 @@ export default function About () {
         After graduating with a degree in{" "}
         <span className="font-bold">Computer Engineering</span>, I decided to pursue my passion for data. I enrolled in a coding bootcamp and learned data engineering. I'm driven by
         <span className="italic font-bold"> the thrill of tackling intricate data puzzles, constantly exploring inventive strategies to streamline data workflows.</span> I firmly believe in the power of teamwork, relishing the opportunity to join forces with colleagues in crafting meaningful narratives from raw data. There's nothing quite like the euphoria of cracking a tough problem and witnessing the pieces fall into place. My core stack includes{" "}
-        <span className="font-bold">Postgres, MySQL, Clickhouse, Airbyte, dbt, Airflow.</span>
+        <span className="font-bold">Postgres, MySQL, Clickhouse, dbt, and Google Cloud Platform.</span>
         <span> I am also familiar with</span>
         <span className="font-bold"> Metabase and Power BI.</span>
       </p>

@@ -65,8 +65,8 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "Python",
   "SQL",
+  "Python",
   "MySQL",
   "Postgres",
   "Clickhouse",
@@ -80,7 +80,6 @@ export const skillsData = [
   "Metabase",
   "Jupyter Notebook",
   "Pandas",
-  "Matplotlib",
   "Google BigQuery",
   "Cloud Data Fusion",
   "Cloud Composer",
