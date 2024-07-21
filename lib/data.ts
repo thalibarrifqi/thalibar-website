@@ -73,16 +73,13 @@ export const skillsData = [
   "Docker",
   "Linux",
   "Git",
-  "Airbyte",
   "Airflow",
   "dbt",
   "PowerBI",
   "Metabase",
   "Jupyter Notebook",
   "Pandas",
-  "Google BigQuery",
-  "Cloud Data Fusion",
-  "Cloud Composer",
+  "Google Cloud Platform"
 ] as const;
 
 export const experiencesData = [
