@@ -4,7 +4,9 @@ import { LuGraduationCap } from "react-icons/lu";
 import minileticsImg from "@/public/miniletics.jpg";
 import careappImg from "@/public/careapp.jpg"
 import twitterImg from "@/public/sentiment.png";
-import atmloanImg from "@/public/atmloan.jpg"
+import atmloanImg from "@/public/atmloan.jpg";
+import historicalStockImg from "@/public/trend_stock.png";
+import dbtImg from "@/public/dbt.png";
 
 export const links = [
   {
@@ -35,32 +37,53 @@ export const links = [
 
 export const projectsData = [
   {
-    title: "Miniletics Sales",
+    title: "Historical Stock Analysis (2025)",
+    description:
+    "Captured historical warehouse stock data to better understand inventory trends over time.",
+    tags: ["ClickHouse", "dbt", "Apache Airflow", "Metabase"],
+    imageUrl: historicalStockImg,
+  },
+  {
+    title: "Implementing dbt Snapshot (2025)",
+    description:
+      "Captured historical data changes, standardized transformations, and improved model consistency across models.",
+    tags: ["ClickHouse", "dbt"],
+    imageUrl: dbtImg,
+  },
+  {
+    title: "Implementing dbt Macros (2024)",
+    description:
+      "Wrote custom dbt macros to automate repetitive transformations and simplify maintenance of data models.",
+    tags: ["ClickHouse", "dbt"],
+    imageUrl: dbtImg,
+  },
+  {
+    title: "Miniletics Sales (2022)",
     description:
       "Analyze Miniletics' customer behavior across two online marketplaces.",
     tags: ["Python", "Jupyter Notebook", "Excel", "PowerBI"],
     imageUrl: minileticsImg,
   },
   {
-    title: "Sentiment Analysis",
+    title: "Sentiment Analysis (2022)",
     description:
       "Analysis of public sentiment on 10,000 tweets about the 'UCL Final' between Liverpool and Real Madrid.",
     tags: ["Python", "roBERTa-base", "Jupyter Notebook", "Seaborn", "Pandas"],
     imageUrl: twitterImg,
   },
   {
-    title: "Care APP",
-    description:
-      "Web application developed for reporting and monitoring machine issues at PT. Jatim Autocomp Indonesia.",
-    tags: ["MySQL", "PHP", "JavaScript", "BootStrap", "HTML"],
-    imageUrl: careappImg,
-  },
-  {
-    title: "ATM Loan Analysis",
+    title: "ATM Loan Analysis (2021)",
     description:
       "Evaluated client data for PT. Mitramas Infosys Global to clients by their city and location.",
     tags: ["Python", "Jupyter Notebook", "Excel", "PowerBI"],
     imageUrl: atmloanImg,
+  },
+  {
+    title: "Care APP (2020)",
+    description:
+      "Web application developed for reporting and monitoring machine issues at PT. Jatim Autocomp Indonesia.",
+    tags: ["MySQL", "PHP", "JavaScript", "BootStrap", "HTML"],
+    imageUrl: careappImg,
   },
 ] as const;
 

@@ -18,19 +18,16 @@ export default function About () {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-bold">Computer Engineering</span>, I decided to pursue my passion for data. I enrolled in a coding bootcamp and learned data engineering. I'm driven by
-        <span className="italic font-bold"> the thrill of tackling intricate data puzzles, constantly exploring inventive strategies to streamline data workflows.</span> I firmly believe in the power of teamwork, relishing the opportunity to join forces with colleagues in crafting meaningful narratives from raw data. There's nothing quite like the euphoria of cracking a tough problem and witnessing the pieces fall into place. My core stack includes{" "}
-        <span className="font-bold">Postgres, MySQL, Clickhouse, dbt, and Google Cloud Platform.</span>
-        <span> I am also familiar with</span>
-        <span className="font-bold"> Metabase and Power BI.</span>
-      </p>
-      <p>
-        I'm open to{" "}
-        <span className="font-medium">short-term projects as well as part-time, long-term collaborations. </span> 
-        <span>Let's connect and harness the power of data together!</span>
-      </p>
+    <p className="mb-3">
+      I started my journey in <span className="font-bold">Computer Engineering</span> and discovered my passion for making data practical and useful. 
+      Through a coding bootcamp, I learned data engineering and began building systems that help teams understand messy data without confusion. 
+      I enjoy collaborating with colleagues to create dashboards, reports, and models that actually make a difference in daily operations. 
+      My main tools are <span className="font-bold">Postgres, MySQL, ClickHouse, dbt, and Google Cloud Platform</span>, and I’m also familiar with <span className="font-bold">Metabase and Power BI</span>.
+    </p>
+    <p>
+      I’m open to <span className="font-medium">short-term projects or part-time collaborations</span>. 
+      <span> Let’s connect and see what we can build together!</span>
+    </p>
     </motion.section>
   );
 }

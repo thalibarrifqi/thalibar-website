@@ -53,16 +53,13 @@ export default function Intro() {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
         >
-            <span className="font-bold">Hello, I'm Thalibar Rifqi.</span> I'm a {" "}
-            <span className="font-bold">data engineer</span> 
-            <span> with </span>
-            <span className="font-bold">1 year</span> of experience. I'm passionate about data, from{" "}
-            <span className='underline font-bold'>collecting, processing,</span>
-            <span> </span>
-            <span className='underline font-bold'>analyzing,</span>
-            <span> and </span>
-            <span className='underline font-bold'>presenting</span> it. I strive to empower every aspect of business operations to enhance efficiency and generate {' '}
-            <span className="underline font-bold">superior results</span>.
+        <span className="font-bold">Hello, I'm Thalibar Rifqi,</span>{" "}
+        <span>I'm a </span>
+        <span className="font-bold">data engineer</span>{" "}
+        <span>who builds data environments that teams can trust and explore with confidence.</span>{" "}
+        <span>I design systems where </span>
+        <span className="underline font-bold">quality, context, and history</span>
+        <span> matter as much as the numbers themselves, helping teams make faster, smarter decisions every day.</span>
         </motion.h1>
 
         <motion.div
@@ -87,7 +84,7 @@ export default function Intro() {
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/cv_thalibarrifqi.pdf"
+          href="/cv_of_thalibarrifqi25.pdf"
           download
         >
           Download CV{" "}
