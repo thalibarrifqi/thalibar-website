@@ -39,28 +39,28 @@ export const projectsData = [
   {
     title: "Historical Stock Analysis (2025)",
     description:
-      "Analyzed historical warehouse stock to reveal trends and inform operational planning.",
+      "Analyzed historical warehouse stock data to reveal trends and inform operational planning.",
     tags: ["ClickHouse", "dbt", "Apache Airflow", "Metabase"],
     imageUrl: historicalStockImg,
   },
   {
     title: "Implementing dbt Snapshot (2025)",
     description:
-      "Tracked historical changes to maintain reliable and consistent data models.",
+      "Tracked historical data source changes to maintain reliable and consistent data models.",
     tags: ["ClickHouse", "dbt"],
     imageUrl: dbtImg,
   },
   {
     title: "Implementing dbt Macros (2024)",
     description:
-      "Automated repetitive transformations, improving models efficiency and maintenance.",
+      "Created reusable model transformations to boost efficiency and simplify maintenance.",
     tags: ["ClickHouse", "dbt"],
     imageUrl: dbtImg,
   },
   {
     title: "Miniletics Sales (2022)",
     description:
-      "Analyze Miniletics' customer behavior across two online marketplaces.",
+      "Analyzed Miniletics' customer behavior across two online marketplaces.",
     tags: ["Python", "Jupyter Notebook", "Excel", "PowerBI"],
     imageUrl: minileticsImg,
   },
