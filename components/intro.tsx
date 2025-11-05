@@ -28,7 +28,7 @@ export default function Intro() {
                     }}
                 >
                     <Image 
-                    src="/thalibar.jpg"
+                    src="/berbahaya.png"
                     alt= "Thalibar Rifqi"
                     width="192"
                     height="192"
