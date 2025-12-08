@@ -7,6 +7,7 @@ import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,6 +15,7 @@ export const metadata = {
   title: 'Thalibar | Personal Portfolio',
   description: 'Thalibar is data engineer with 1 year of experience.',
 }
+
 
 export default function RootLayout({
   children,
@@ -29,6 +31,7 @@ export default function RootLayout({
           <ActiveSectionContextProvider>
           <Header />
           {children}
+          <Analytics />
           <SpeedInsights />
           <Footer />
           <Toaster position="top-center"/>
