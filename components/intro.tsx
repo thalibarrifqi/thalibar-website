@@ -54,13 +54,24 @@ export default function Intro() {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
         >
-        <span className="font-bold">Hello, I'm Thalibar Rifqi,</span>{" "}
-        <span>I'm a </span>
-        <span className="font-bold">data engineer</span>{" "}
-        <span>who builds data environments that teams can trust and explore with confidence.</span>{" "}
-        <span>I design systems where </span>
-        <span className="underline font-bold">quality, context, and history</span>
-        <span> matter as much as the numbers themselves, helping teams make faster, smarter decisions every day.</span>
+        <div className="flex flex-col items-center justify-center text-center">
+          {/* HEADLINE */}
+          <h1 className="text-4xl md:text-4xl font-extrabold mb-6 text-gray-900">
+            Building Data You Can Trust.
+          </h1>
+
+          {/* INTRO PARAGRAPH */}
+          <p className="max-w-3xl text-lg text-gray-700 leading-relaxed">
+            <span className="font-bold text-gray-900">Hello, I'm Thalibar Rifqi.</span>{" "}
+            <span>I'm a </span>
+            <span className="font-bold text-gray-900">data engineer</span>{" "}
+            <span>who builds scalable data environments that teams can trust. Leveraging </span>
+            <span className="font-bold text-gray-900">Airflow, ClickHouse, and dbt</span>
+            <span>, I design systems where </span>
+            <span className="underline font-bold text-gray-900">quality, context, and history</span>
+            <span> matter as much as the numbers themselves, helping businesses make faster, smarter decisions every day.</span>
+          </p>
+        </div>
         </motion.h1>
 
         <motion.div
@@ -85,7 +96,7 @@ export default function Intro() {
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/rem_cv_of_thalibarrifqi_nov25.pdf"
+          href="/cv_thalibar_feb26.pdf"
           download
         >
           Download CV{" "}

@@ -5,6 +5,7 @@ import minileticsImg from "@/public/miniletics.jpg";
 import careappImg from "@/public/careapp.jpg"
 import twitterImg from "@/public/sentiment.png";
 import atmloanImg from "@/public/atmloan.jpg";
+import starSchemaImg from "@/public/star_schema.png";
 import historicalStockImg from "@/public/trend_stock.png";
 import dbtImg from "@/public/dbt.png";
 
@@ -37,104 +38,103 @@ export const links = [
 
 export const projectsData = [
   {
-    title: "Historical Stock Analysis (2025)",
+    title: "Enterprise Dimensional Modeling",
     description:
-      "Analyzed historical warehouse stock data to reveal trends and inform operational planning.",
+      "Architected a centralized data warehouse utilizing Kimball’s dimensional modeling methodology. Designed and deployed robust star schemas structuring complex manufacturing data into intuitive Fact and Dimension tables.",
+    tags: ["ClickHouse", "dbt"],
+    imageUrl: starSchemaImg,
+  },
+  {
+    title: "Enterprise Inventory Orchestration",
+    description:
+      "Architected an automated pipeline using Apache Airflow and dbt. Transformed raw warehouse data into a performant ClickHouse semantic layer, empowering operations with Metabase dashboards.",
     tags: ["ClickHouse", "dbt", "Apache Airflow", "Metabase"],
     imageUrl: historicalStockImg,
   },
   {
-    title: "Implementing dbt Snapshot (2025)",
+    title: "Historical Data Tracking via dbt Snapshots",
     description:
-      "Tracked historical data source changes to maintain reliable and consistent data models.",
+      "Engineered a robust Slowly Changing Dimension (SCD Type 2) architecture using dbt snapshots. Overcame complex ClickHouse configuration constraints to accurately capture historical data mutations.",
     tags: ["ClickHouse", "dbt"],
     imageUrl: dbtImg,
   },
   {
-    title: "Implementing dbt Macros (2024)",
+    title: "Modular Data Transformations via dbt Macros",
     description:
-      "Created reusable model transformations to boost efficiency and simplify maintenance.",
+      "Engineered custom dbt macros to enforce the DRY (Don't Repeat Yourself) principle across the data warehouse. Remove repetitive SQL transformations into centralized components.",
     tags: ["ClickHouse", "dbt"],
     imageUrl: dbtImg,
-  },
-  {
-    title: "Miniletics Sales (2022)",
-    description:
-      "Analyzed Miniletics' customer behavior across two online marketplaces.",
-    tags: ["Python", "Jupyter Notebook", "Excel", "PowerBI"],
-    imageUrl: minileticsImg,
-  },
-  {
-    title: "Sentiment Analysis (2022)",
-    description:
-      "Analysis of public sentiment on 10,000 tweets about the 'UCL Final' between Liverpool and Real Madrid.",
-    tags: ["Python", "roBERTa-base", "Jupyter Notebook", "Seaborn", "Pandas"],
-    imageUrl: twitterImg,
-  },
-  {
-    title: "ATM Loan Analysis (2021)",
-    description:
-      "Evaluated client data for PT. Mitramas Infosys Global to clients by their city and location.",
-    tags: ["Python", "Jupyter Notebook", "Excel", "PowerBI"],
-    imageUrl: atmloanImg,
-  },
-  {
-    title: "Care APP (2020)",
-    description:
-      "Web application developed for reporting and monitoring machine issues at PT. Jatim Autocomp Indonesia.",
-    tags: ["MySQL", "PHP", "JavaScript", "BootStrap", "HTML"],
-    imageUrl: careappImg,
-  },
+  }
+  // ,
+  // {
+  //   title: "Miniletics Sales",
+  //   description:
+  //     "Analyzed Miniletics' customer behavior across two online marketplaces.",
+  //   tags: ["Python", "Jupyter Notebook", "Excel", "PowerBI"],
+  //   imageUrl: minileticsImg,
+  // },
+  // {
+  //   title: "Sentiment Analysis (2022)",
+  //   description:
+  //     "Analysis of public sentiment on 10,000 tweets about the 'UCL Final' between Liverpool and Real Madrid.",
+  //   tags: ["Python", "roBERTa-base", "Jupyter Notebook", "Seaborn", "Pandas"],
+  //   imageUrl: twitterImg,
+  // },
+  // {
+  //   title: "ATM Loan Analysis (2021)",
+  //   description:
+  //     "Evaluated client data for PT. Mitramas Infosys Global to clients by their city and location.",
+  //   tags: ["Python", "Jupyter Notebook", "Excel", "PowerBI"],
+  //   imageUrl: atmloanImg,
+  // },
+  // {
+  //   title: "Care APP (2020)",
+  //   description:
+  //     "Web application developed for reporting and monitoring machine issues at PT. Jatim Autocomp Indonesia.",
+  //   tags: ["MySQL", "PHP", "JavaScript", "BootStrap", "HTML"],
+  //   imageUrl: careappImg,
+  // },
 ] as const;
 
 export const skillsData = [
-  "SQL",
-  "Python",
-  "MySQL",
-  "Postgres",
-  "Clickhouse",
-  "Docker",
-  "Linux",
-  "Git",
   "Airflow",
   "dbt",
-  "PowerBI",
+  "Clickhouse",
+  "Dimensional Modeling", // Skill baru yang mematikan
+  "SQL",
+  "Python",
+  "Postgres",
+  "MySQL",
+  "Google Cloud Platform",
+  "Docker",
+  "Linux",
   "Metabase",
-  "Jupyter Notebook",
-  "Pandas",
-  "Google Cloud Platform"
+  "PowerBI",
+  "Git",
 ] as const;
 
 export const experiencesData = [
   {
-    title: "Freelancer",
-    location: "Remote",
-    description:
-      "Doing part-time work on Upwork is one of my ways to upgrade my skills and connect with amazing stakeholders around the world.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2024 - present",
-  },
-  {
     title: "Data Engineer",
     location: "Gresik, East Java",
     description:
-    "I have been working as a Data Engineer for over a year at one of the largest textile manufacturers in Indonesia, helping the company achieve their vision by collaborate with another department.",
+      "Architected and deployed a centralized Enterprise Data Warehouse to unify fragmented ERP systems. I engineered 20+ automated pipelines using Apache Airflow and implemented Kimball Dimensional Modeling via dbt to create a performant semantic layer for executive decision-making.",
     icon: React.createElement(CgWorkAlt),
     date: "2023 - present",
   },
   {
-    title: "Data Entry",
+    title: "Data Quality Operator",
     location: "Remote",
     description:
-    "I began my journey in data by working part-time as a Data Entry Specialist. This job taught me how important data is for helping a company achieve its goals.",
+      "Maintained a 90%+ data quality threshold for a global music database. I specialized in auditing and validating high-volume datasets, collaborating with international teams to ensure the integrity and reliability of platform analytics.",
     icon: React.createElement(CgWorkAlt),
-    date: "2021-2022",
+    date: "2021 - 2022",
   },
   {
-    title: "Software Engineer",
+    title: "Software Engineer Intern",
     location: "Pasuruan, East Java",
     description:
-    "I interned as a Software Engineer at a wiring harness manufacturer in Indonesia, transforming the problem reporting and monitoring system from paper-based to web applications.",
+      "Digitized legacy paper-based reporting workflows into a web-based monitoring application. Developed a centralized platform using MySQL and JavaScript to streamline internal problem-reporting and operational monitoring.",
     icon: React.createElement(LuGraduationCap),
     date: "2020",
   },

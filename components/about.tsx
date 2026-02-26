@@ -11,7 +11,7 @@ export default function About () {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-28 max-w-[45rem] text-left leading-8 sm:mb-40 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -19,14 +19,17 @@ export default function About () {
     >
       <SectionHeading>About me</SectionHeading>
     <p className="mb-3">
-      I started my journey in <span className="font-bold">Computer Engineering</span> and discovered my passion for making data practical and useful. 
-      Through a coding bootcamp, I learned data engineering and began building systems that help teams understand messy data without confusion. 
-      I enjoy collaborating with colleagues to create dashboards, reports, and models that actually make a difference in daily operations. 
-      My main tools are <span className="font-bold">Postgres, MySQL, ClickHouse, dbt, and Google Cloud Platform</span>, and I’m also familiar with <span className="font-bold">Metabase and Power BI</span>.
+      While my formal academic background is in <span className="font-bold">Computer Engineering</span>, my expertise in building scalable data environments was forged entirely through hands-on industry experience and continuous self-learning. 
+      I discovered my passion for making data practical, and quickly specialized in the Modern Data Stack. 
+      Rather than simply moving data from point A to B, I build automated systems that transform fragmented operational records into reliable semantic layers. 
+      I thrive on collaborating with cross-functional teams, replacing manual reporting bottlenecks with highly performant models that drive daily business decisions.
+    </p>
+    <p className="mb-3">
+      My core engineering tools include <span className="font-bold">Apache Airflow, dbt, ClickHouse, Postgres, and Google Cloud Platform</span>, complemented by a strong focus on serving accessible insights through <span className="font-bold">Metabase and Power BI</span>.
     </p>
     <p>
-      I’m open to <span className="font-medium">short-term projects or part-time collaborations</span>. 
-      <span> Let’s connect and see what we can build together!</span>
+      I’m currently open to <span className="font-medium">full-time roles and high-impact freelance collaborations</span>. 
+      <span> Let’s connect and build a data foundation your team can trust!</span>
     </p>
     </motion.section>
   );
