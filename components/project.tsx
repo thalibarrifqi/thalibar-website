@@ -33,7 +33,7 @@ export default function Project({
       {/* 1. SECTION: h-auto di mobile agar fleksibel jika teks panjang */}
       <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden relative flex flex-col sm:h-[24rem] h-auto hover:bg-gray-200 transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
         
-        {/* 2. BAGIAN ATAS: max-w-full di mobile agar teks bisa melebar ke kanan */}
+        {/* CONTAINER TEKS */}
         <div className="pt-4 px-5 sm:pl-10 sm:pr-2 sm:pt-10 max-w-full sm:max-w-[50%] flex flex-col relative z-20">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70 text-sm sm:text-base">
@@ -41,7 +41,7 @@ export default function Project({
           </p>
         </div>
 
-        {/* 3. BAGIAN BAWAH: Tags didorong ke bawah */}
+        {/* TAGS */}
         <div className="px-5 sm:pl-10 pb-6 sm:pb-8 mt-6 sm:mt-auto relative z-20">
           <ul className="flex flex-wrap gap-2">
             {tags.map((tag, index) => (
@@ -55,18 +55,24 @@ export default function Project({
           </ul>
         </div>
 
-        {/* 4. GAMBAR: Disembunyikan di Mobile agar bersih, atau diposisikan ulang */}
+        {/* GAMBAR: Sekarang muncul di bawah teks pada Mobile, dan di samping pada Desktop */}
         <Image
           src={imageUrl}
           alt="Project I worked on"
           quality={95}
-          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
-        transition 
-        group-hover:scale-[1.04]
-        group-hover:-translate-x-3
-        group-hover:translate-y-3
-        group-hover:-rotate-2
-        "
+          className="
+            /* Layout Mobile: Muncul relatif di bawah teks */
+            relative block w-[90%] mx-auto mt-4 rounded-t-lg shadow-2xl
+            
+            /* Layout Desktop: Kembali ke posisi absolut di kanan */
+            sm:absolute sm:top-8 sm:-right-40 sm:w-[28.25rem] sm:mt-0 sm:block
+            
+            transition 
+            group-hover:scale-[1.04]
+            group-hover:-translate-x-3
+            group-hover:translate-y-3
+            group-hover:-rotate-2
+          "
         />
       </section>
     </motion.div>
