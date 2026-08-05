@@ -13,7 +13,21 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Thalibar | Personal Portfolio',
-  description: 'Thalibar is data engineer with 1 year of experience.',
+  description: 'Thalibar is a data engineer with 1 year of experience.',
+  keywords: ['data engineer', 'airflow', 'dbt', 'clickhouse', 'portfolio'],
+  openGraph: {
+    title: 'Thalibar | Personal Portfolio',
+    description: 'Thalibar is a data engineer with 1 year of experience.',
+    url: 'https://thalibarrifqi.com',
+    siteName: 'Thalibar Portfolio',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Thalibar | Personal Portfolio',
+    description: 'Thalibar is a data engineer with 1 year of experience.',
+  },
 }
 
 
