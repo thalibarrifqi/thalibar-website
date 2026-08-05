@@ -68,7 +68,7 @@ export const projectsData = [
       "A fun side project that generates aesthetic wallpapers from Spotify playlists. Fetches album art and track data via the Spotify API to create customizable visual layouts.",
     tags: ["Next.js", "Spotify API", "Tailwind CSS"],
     imageUrl: spotifyWallpaperImg,
-    url: "https://spotify-playlist-wallpaper-generator.vercel.app",
+    url: "https://spotify-playlist-wallpaper-generato.vercel.app",
   },
 ];
 
