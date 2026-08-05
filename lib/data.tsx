@@ -4,6 +4,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import starSchemaImg from "@/public/star_schema.png";
 import historicalStockImg from "@/public/trend_stock.png";
 import dbtImg from "@/public/dbt.png";
+import spotifyWallpaperImg from "@/public/spotify_wallpaper_generator.png";
 
 export const links = [
   {
@@ -60,6 +61,13 @@ export const projectsData = [
       "Engineered custom dbt macros to enforce the DRY (Don't Repeat Yourself) principle across the data warehouse. Remove repetitive SQL transformations into centralized components.",
     tags: ["ClickHouse", "dbt"],
     imageUrl: dbtImg,
+  },
+  {
+    title: "Spotify Playlist Wallpaper Generator",
+    description:
+      "A fun side project that generates aesthetic wallpapers from Spotify playlists. Fetches album art and track data via the Spotify API to create customizable visual layouts.",
+    tags: ["Next.js", "Spotify API", "Tailwind CSS"],
+    imageUrl: spotifyWallpaperImg,
   },
 ];
 
