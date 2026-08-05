@@ -1,10 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
-import minileticsImg from "@/public/miniletics.jpg";
-import careappImg from "@/public/careapp.jpg"
-import twitterImg from "@/public/sentiment.png";
-import atmloanImg from "@/public/atmloan.jpg";
 import starSchemaImg from "@/public/star_schema.png";
 import historicalStockImg from "@/public/trend_stock.png";
 import dbtImg from "@/public/dbt.png";
@@ -64,43 +60,14 @@ export const projectsData = [
       "Engineered custom dbt macros to enforce the DRY (Don't Repeat Yourself) principle across the data warehouse. Remove repetitive SQL transformations into centralized components.",
     tags: ["ClickHouse", "dbt"],
     imageUrl: dbtImg,
-  }
-  // ,
-  // {
-  //   title: "Miniletics Sales",
-  //   description:
-  //     "Analyzed Miniletics' customer behavior across two online marketplaces.",
-  //   tags: ["Python", "Jupyter Notebook", "Excel", "PowerBI"],
-  //   imageUrl: minileticsImg,
-  // },
-  // {
-  //   title: "Sentiment Analysis (2022)",
-  //   description:
-  //     "Analysis of public sentiment on 10,000 tweets about the 'UCL Final' between Liverpool and Real Madrid.",
-  //   tags: ["Python", "roBERTa-base", "Jupyter Notebook", "Seaborn", "Pandas"],
-  //   imageUrl: twitterImg,
-  // },
-  // {
-  //   title: "ATM Loan Analysis (2021)",
-  //   description:
-  //     "Evaluated client data for PT. Mitramas Infosys Global to clients by their city and location.",
-  //   tags: ["Python", "Jupyter Notebook", "Excel", "PowerBI"],
-  //   imageUrl: atmloanImg,
-  // },
-  // {
-  //   title: "Care APP (2020)",
-  //   description:
-  //     "Web application developed for reporting and monitoring machine issues at PT. Jatim Autocomp Indonesia.",
-  //   tags: ["MySQL", "PHP", "JavaScript", "BootStrap", "HTML"],
-  //   imageUrl: careappImg,
-  // },
-] as const;
+  },
+];
 
 export const skillsData = [
   "Airflow",
   "dbt",
   "Clickhouse",
-  "Dimensional Modeling", // Skill baru yang mematikan
+  "Dimensional Modeling",
   "SQL",
   "Python",
   "Postgres",

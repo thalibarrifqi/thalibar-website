@@ -1,10 +1,10 @@
 "use client";
 
-import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
+import { EMAIL_MAX_LENGTH, MESSAGE_MAX_LENGTH } from "@/lib/constants";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
 
@@ -42,6 +42,12 @@ export default function Contact() {
       <form
         className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
+          const honeypot = formData.get("website");
+          if (honeypot) {
+            toast.success("Email sent successfully!");
+            return;
+          }
+
           const { data, error } = await sendEmail(formData);
 
           if (error) {
@@ -57,7 +63,7 @@ export default function Contact() {
           name="senderEmail"
           type="email"
           required
-          maxLength={500}
+          maxLength={EMAIL_MAX_LENGTH}
           placeholder="Your email"
           aria-label="Your email"
         />
@@ -66,9 +72,17 @@ export default function Contact() {
           name="message"
           placeholder="Your message"
           required
-          maxLength={5000}
+          maxLength={MESSAGE_MAX_LENGTH}
           aria-label="Your message"
         />
+        <div className="absolute opacity-0 pointer-events-none" aria-hidden="true">
+          <input
+            type="text"
+            name="website"
+            tabIndex={-1}
+            autoComplete="off"
+          />
+        </div>
         <SubmitBtn />
       </form>
     </motion.section>

@@ -1,6 +1,5 @@
 "use client";
 
-import React from 'react';
 import { motion } from 'framer-motion';
 import { links } from '@/lib/data';
 import Link from 'next/link';
@@ -34,7 +33,7 @@ export default function Header() {
                         {
                             link.name === activeSection && (
 
-                                <motion.span className='bg-gray-200 rounded-full absolute inset-0 -z-10 dark:bg-gray-600' layoutDependency='activeSection' transition={{
+                                <motion.span className='bg-gray-200 rounded-full absolute inset-0 -z-10 dark:bg-gray-600' layoutId='activeSection' transition={{
                                     type: "spring",
                                     stiffness: 380,
                                     damping: 30,

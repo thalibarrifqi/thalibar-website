@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState, createContext, useContext } from "react";
+import { useEffect, useState, createContext, useContext, useCallback } from "react";
 
 type Theme = "light" | "dark";
 
@@ -20,17 +20,12 @@ export default function ThemeContextProvider({
 }: ThemeContextProviderProps) {
   const [theme, setTheme] = useState<Theme>("light");
 
-  const toggleTheme = () => {
-    if (theme === "light") {
-      setTheme("dark");
-      window.localStorage.setItem("theme", "dark");
-      document.documentElement.classList.add("dark");
-    } else {
-      setTheme("light");
-      window.localStorage.setItem("theme", "light");
-      document.documentElement.classList.remove("dark");
-    }
-  };
+  const toggleTheme = useCallback(() => {
+    const next = theme === "light" ? "dark" : "light";
+    setTheme(next);
+    window.localStorage.setItem("theme", next);
+    document.documentElement.classList.toggle("dark", next === "dark");
+  }, [theme]);
 
   useEffect(() => {
     const localTheme = window.localStorage.getItem("theme") as Theme | null;
