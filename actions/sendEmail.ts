@@ -19,15 +19,15 @@ export const sendEmail = async (formData: FormData) => {
   if (!validateEmail(senderEmail)) return { error: "Invalid email format" };
   if (!validateString(message, MESSAGE_MAX_LENGTH)) return { error: "Invalid message" };
 
-  const headerStore = await headers();
-  const ip = headerStore.get("x-forwarded-for") ?? "127.0.0.1";
-  const { success } = await ratelimit.limit(ip);
-
-  if (!success) {
-    return { error: "Too many requests. Please try again later." };
-  }
-
   try {
+    const headerStore = await headers();
+    const ip = headerStore.get("x-forwarded-for") ?? "127.0.0.1";
+    const { success } = await ratelimit.limit(ip);
+
+    if (!success) {
+      return { error: "Too many requests. Please try again later." };
+    }
+
     const emailHtml = await render(
       React.createElement(ContactFormEmail, {
         message: message as string,
