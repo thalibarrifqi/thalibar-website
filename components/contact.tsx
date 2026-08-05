@@ -7,9 +7,11 @@ import { sendEmail } from "@/actions/sendEmail";
 import { EMAIL_MAX_LENGTH, MESSAGE_MAX_LENGTH } from "@/lib/constants";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
+import { useRef } from "react";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
+  const formRef = useRef<HTMLFormElement>(null);
 
   return (
     <motion.section
@@ -40,10 +42,17 @@ export default function Contact() {
       </p>
 
       <form
+        ref={formRef}
         className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
-          const honeypot = formData.get("website");
+          const honeypot = formData.get("company_url");
           if (honeypot) {
+            toast.success("Email sent successfully!");
+            return;
+          }
+
+          const submitTime = formData.get("submitted_at");
+          if (submitTime && Date.now() - Number(submitTime) < 3000) {
             toast.success("Email sent successfully!");
             return;
           }
@@ -75,13 +84,10 @@ export default function Contact() {
           maxLength={MESSAGE_MAX_LENGTH}
           aria-label="Your message"
         />
-        <div className="absolute opacity-0 pointer-events-none" aria-hidden="true">
-          <input
-            type="text"
-            name="website"
-            tabIndex={-1}
-            autoComplete="off"
-          />
+        <input type="hidden" name="submitted_at" value={Date.now().toString()} />
+        <div style={{ position: "absolute", left: "-9999px" }} aria-hidden="true">
+          <input type="text" name="company_url" tabIndex={-1} autoComplete="off" />
+          <input type="text" name="fax_number" tabIndex={-1} autoComplete="off" />
         </div>
         <SubmitBtn />
       </form>
